@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Article | Update </title>
+    </head>
+
+    <body>
+        <form method="POST" action="/user_game/update/<%= user_game.id %>">
+            <label for="username">
+                Username
+            </label>
+            <br>
+            <input type="text" name="username" value="<%= user_game.username %>">
+            <br>
+
+            <label for="password">
+                Password
+            </label>
+            <br>
+            <input type="text" name="password" value="<%= user_game.password %>">
+            <br>
+
+            <button type="submit">Submit</button>
+            
+        </form>
+    </body>
+</html>
